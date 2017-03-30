@@ -13,21 +13,51 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/languages/r.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+	<!--<script> function dropdownclick(){
+		<div id="Rplot" >
+			<script src="test/js/Rplot.js"></script>
+		</div>
+		}
+	</script>-->
+
+	
 
 </head>
 <body>
 
-	<h1 align="center"> Two-dimensional proceptron learning</h1>
+	<p>
+		<h1 style="text-align: center;font-size: 200%"> AI web application</h1>
+	</p>
 	
-	<select>
-  		<option value="volvo">Volvo</option>
-  		<option value="saab">Saab</option>
-  		<option value="opel">Opel</option>
-  		<option value="audi">Audi</option>
-	</select>
+	<p style="margin-top:50px;margin-bottom:20px">
+		<text> eta: </text>
+		<select style="margin-right:50px" onclick="dropdownclick()">
+				<option value="0.01">0.01</option>
+				<option value="0.05">0.05</option>
+				<option value="0.1">0.1</option>
+				<option value="0.5">0.5</option>
+				<option value="0.8">0.8</option>
+				<option value="1">1</option>
+		</select>
+		<text> standardize: </text>
+		<select style="margin-right:50px">
+				<option value="TRUE">TRUE</option>
+				<option value="FALSE">FALSE</option>
+		</select>
+		<text> data: </text>
+		<select style="margin-right:50px">
+				<option value="iris">iris</option>
+				<option value="WDBC cancer">WDBC cancer</option>
+		</select>
+		<button type="button">Submit</button>
+	</p>
+
 	
-	<div class="scianimator"><div id="Rplot" style="display: inline-block;"></div></div>
-	<script src="js/Rplot.js"></script>
+	
+	<div id="Rplot" >
+		<script src="js/Rplot.js"></script>
+	</div>
+	
 <!-- highlight R code -->
 
 </body>
