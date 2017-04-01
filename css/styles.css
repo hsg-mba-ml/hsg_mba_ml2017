@@ -4,5 +4,16 @@ body {
 
 #tag1 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin-bottom: 100px;
 }
 
+#menu {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+#rplot {
+	border-style: solid;
+    border-color: #ff0000 #0000ff;
+}

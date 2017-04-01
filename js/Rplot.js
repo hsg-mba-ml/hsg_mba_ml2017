@@ -1,3 +1,12 @@
+/*
+
+Habe die urspräunglcihe funktion auskommmentiert und in dieser .js datei erstmal gearbeitet, damit der code immer von alleine läuft wenn ich den browser
+refresche, passen wir nachher wieder an.
+
+*/
+
+
+/*
 (function($) {
     $(document).ready(function() {
 	$.fn.scianimator.defaults.theme = 'dark';
@@ -10,5 +19,34 @@
 	$('#Rplot').scianimator('play');
     });
 })(jQuery);
+*/
 
 
+
+//daten aus dem dropdown menu werden gespeichtert, hier nur manuell eingestellt damits schneller ist
+var eta = "001";
+var data = "iris";
+var standardize = "t";
+
+//daten werden zusammengeführt zu einem string
+var zwischen = eta + data + standardize; 
+
+(function($) {
+    $(document).ready(function() {
+
+//array wird erstellt, welches die namen der einzelnen dateien enthält, ordner wir so also automatisch ausgewöhlt anhand der inputs aus dem dropdown menu
+//vorraussetzung ist so dass die ordner entsprechend benannt werden 
+    var images1 = [zwischen +"/1.jpg",zwischen +"/2.jpg",zwischen +"/3.jpg"];
+
+	$.fn.scianimator.defaults.theme = 'dark';
+		$('#Rplot').scianimator({
+			//array elemente werden einzeln ausgewählt zum anzeigen, hier habe ich probiert das zu automatisieren mit einem loop oder so - was uns andere optionen ermöglcihen würde - aber habe es noch nicht hinbekommen
+		    'images': [images1[0],images1[1],images1[2]],
+		    'width': 1500,
+		    'delay': 1000,
+		    'loopMode': 'loop'
+		});
+		$('#Rplot').scianimator('play');
+
+    });
+})(jQuery);
