@@ -26,39 +26,28 @@
 <body>
 	<div id = "menu">
 		<p>
-			<h1 id = "tag1" style="text-align: center;font-size: 200%"> @Max: aktuell verwendbar sind das rechte drop down menu und der button </h1>
+			<h1 id = "tag1" style="text-align: center;font-size: 200%"> AI Algorithms </h1>
 		
 		<p style="margin-top:50px;margin-bottom:20px">
 			
 			<text> eta: </text>
 			<select id = "eta1" style="margin-right:50px" onclick="dropdownclick()">
 					<option value="0.01">0.01</option>
-					<option value="0.05">0.05</option>
-					<option value="0.1">0.1</option>
 					<option value="0.5">0.5</option>
-					<option value="0.8">0.8</option>
-					<option value="1">1</option>
 			</select>
 
 			<text> standardize: </text>
 			<select id = "standardize1"  style="margin-right:50px">
-					<option value="TRUE">TRUE</option>
-					<option value="FALSE">FALSE</option>
+					<option value="true">True</option>
+					<option value="false">False</option>
 			</select>
 
 			<text> data: </text>
 			<select id="data1" style="margin-right:50px">
 					<option value="iris">iris</option>
-					<option value="WDBC cancer">WDBC cancer</option>
+					<option value="cancer">WDBC cancer</option>
 			</select>
 
-
-			<!-- Werte werden via dropdown menu ausgewählts-->
-			<select id="person" style="margin-right:50px">
-					<option value="Trump">Donald Trump</option>
-					<option value="Federer">Roger Federer</option>
-					<option value="Landscapes">Landscapes</option>
-			</select>
 			<button onclick="buttonClicked()" type="button">Click here to refresh</button>
 		</p>
 	</div>
