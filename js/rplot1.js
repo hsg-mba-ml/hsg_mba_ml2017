@@ -17,6 +17,19 @@ function buttonClicked() {
 	//diese zeile löscht den bisherigen inhalt
 	document.getElementById("Rplot").innerHTML = "";
 
+
+
+	$.fn.scianimator.defaults.theme = 'dark';
+		$('#Rplot').scianimator({
+		    'images': ["ImgGroup1/1.jpg","ImgGroup1/2.jpg","ImgGroup1/3.jpg"],
+		    'width': 1500,
+		    'delay': 1000,
+		    'loopMode': 'loop'
+		});
+		$('#Rplot').scianimator('play');
+
+}	
+
 	//Switch verzweigung erkennt anhand der selektieren werte, welche bilder angezeigt werden sollen und erstellt eine neue bilderanimation 
 	
 	/*
