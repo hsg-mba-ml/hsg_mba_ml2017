@@ -18,7 +18,7 @@ function buttonClicked() {
 	//Switch verzweigung erkennt anhand der selektieren werte, welche bilder angezeigt werden sollen und erstellt eine neue bilderanimation
 	switch(person)
 	{
-		case "Trump test": 
+		case "Trump test2": 
 		$.fn.scianimator.defaults.theme = 'dark';
 		$('#Rplot').scianimator({
 		    'images': ["ImgGroup1/1.jpg","ImgGroup1/2.jpg","ImgGroup1/3.jpg"],
