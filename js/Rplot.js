@@ -37,10 +37,9 @@ function buttonClicked(){
 	{
 		bildergruppe[i] = zwischen + "/Rplot" + (i+1) +".png";
 	}
-	// console.log(bildergruppe[20]);
 
 	document.getElementById("Rplot").innerHTML = "";
-	
+
 	$.fn.scianimator.defaults.theme = 'dark';
 	$('#Rplot').scianimator({
 	    'images': [

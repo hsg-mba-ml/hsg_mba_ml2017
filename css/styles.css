@@ -9,11 +9,12 @@ body {
 
 #menu {
 	margin: auto;
-	width: 50%;
+	width: 60%;
 	padding: 10px;
+	font-family: arial;
 }
 
-#rplot {
-	border-style: solid;
-    border-color: #ff0000 #0000ff;
+#Rplot.scianimator.dark {
+    width: 500px;
 }
+

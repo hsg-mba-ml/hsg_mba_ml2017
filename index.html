@@ -13,36 +13,27 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/languages/r.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
-	<!--<script> function dropdownclick(){
-		<div id="Rplot" >
-			<script src="test/js/Rplot.js"></script>
-		</div>
-		}
-	</script>-->
-
-	
 
 </head>
 <body>
 	<div id = "menu">
 		<p>
 			<h1 id = "tag1" style="text-align: center;font-size: 200%"> AI Algorithms </h1>
-		
 		<p style="margin-top:50px;margin-bottom:20px">
 			
-			<text> eta: </text>
+			<text> Eta: </text>
 			<select id = "eta1" style="margin-right:50px" onclick="dropdownclick()">
 					<option value="0.01">0.01</option>
 					<option value="0.5">0.5</option>
 			</select>
 
-			<text> standardize: </text>
+			<text> Standardize: </text>
 			<select id = "standardize1"  style="margin-right:50px">
 					<option value="true">True</option>
 					<option value="false">False</option>
 			</select>
 
-			<text> data: </text>
+			<text> Data: </text>
 			<select id="data1" style="margin-right:50px">
 					<option value="iris">iris</option>
 					<option value="cancer">WDBC cancer</option>
@@ -50,15 +41,13 @@
 
 			<button onclick="buttonClicked()" type="button">Click here to refresh</button>
 		</p>
+
 	</div>
 
 	
 	
 	<div id="Rplot" >
 		<script src="js/Rplot.js"></script>
-	</div>
-	<div id="Rplot1" >
-		<script src="js/Rplot1.js"></script>
 	</div>
 	
 <!-- highlight R code -->
