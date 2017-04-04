@@ -4,9 +4,9 @@
 	<meta name="generator" content="R package animation 2.4">
 	<title>Perceptron learning</title>
 	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/styles.css" />
 	<link rel="stylesheet" href="css/scianimator.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
 
 	<script src="js/jquery-1.4.4.min.js"></script>
 	<script src="js/jquery.scianimator.min.js"></script>
@@ -24,43 +24,44 @@
 
 </head>
 <body>
-
-	<p>
-		<h1 id = "tag1" style="text-align: center;font-size: 200%"> @Max: aktuell verwendbar sind das rechte drop down menu und der button </h1>
-	
-	<p style="margin-top:50px;margin-bottom:20px">
+	<div id = "menu">
+		<p>
+			<h1 id = "tag1" style="text-align: center;font-size: 200%"> @Max: aktuell verwendbar sind das rechte drop down menu und der button </h1>
 		
-		<text> eta: </text>
-		<select id = "eta1" style="margin-right:50px" onclick="dropdownclick()">
-				<option value="0.01">0.01</option>
-				<option value="0.05">0.05</option>
-				<option value="0.1">0.1</option>
-				<option value="0.5">0.5</option>
-				<option value="0.8">0.8</option>
-				<option value="1">1</option>
-		</select>
+		<p style="margin-top:50px;margin-bottom:20px">
+			
+			<text> eta: </text>
+			<select id = "eta1" style="margin-right:50px" onclick="dropdownclick()">
+					<option value="0.01">0.01</option>
+					<option value="0.05">0.05</option>
+					<option value="0.1">0.1</option>
+					<option value="0.5">0.5</option>
+					<option value="0.8">0.8</option>
+					<option value="1">1</option>
+			</select>
 
-		<text> standardize: </text>
-		<select id = "standardize1"  style="margin-right:50px">
-				<option value="TRUE">TRUE</option>
-				<option value="FALSE">FALSE</option>
-		</select>
+			<text> standardize: </text>
+			<select id = "standardize1"  style="margin-right:50px">
+					<option value="TRUE">TRUE</option>
+					<option value="FALSE">FALSE</option>
+			</select>
 
-		<text> data: </text>
-		<select id="data1" style="margin-right:50px">
-				<option value="iris">iris</option>
-				<option value="WDBC cancer">WDBC cancer</option>
-		</select>
+			<text> data: </text>
+			<select id="data1" style="margin-right:50px">
+					<option value="iris">iris</option>
+					<option value="WDBC cancer">WDBC cancer</option>
+			</select>
 
 
-		<!-- Werte werden via dropdown menu ausgewählts-->
-		<select id="person" style="margin-right:50px">
-				<option value="Trump">Donald Trump</option>
-				<option value="Federer">Roger Federer</option>
-				<option value="Landscapes">Landscapes</option>
-		</select>
-		<button onclick="buttonClicked()" type="button">Click here to refresh</button>
-	</p>
+			<!-- Werte werden via dropdown menu ausgewählts-->
+			<select id="person" style="margin-right:50px">
+					<option value="Trump">Donald Trump</option>
+					<option value="Federer">Roger Federer</option>
+					<option value="Landscapes">Landscapes</option>
+			</select>
+			<button onclick="buttonClicked()" type="button">Click here to refresh</button>
+		</p>
+	</div>
 
 	
 	
