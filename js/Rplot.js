@@ -8,7 +8,7 @@ function buttonClicked(){
 	//format: data=cancer / data=iris
 	var data = "data=" + document.getElementById("data1").value;
 
-	var zwischen = "AI_web_application/Images/" + eta + standardize + data;
+	var zwischen = "Images/" + eta + standardize + data;
 
 	var bildergruppe = ["element1", "element2"];
 	for(i = 0; i<= 29; i++)
