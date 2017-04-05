@@ -1,4 +1,4 @@
-
+<<<<<<< HEAD
 (function($) {
     $(document).ready(function() {
 
@@ -51,6 +51,8 @@
 })(jQuery);
 
 
+=======
+>>>>>>> f31ddb37a9caa64077ff2307fb5b98ef0f7c1b6d
 
 function buttonClicked(){
 	//eta=0.01-st=true-data=iris
