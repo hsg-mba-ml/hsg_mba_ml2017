@@ -17,37 +17,40 @@
 </head>
 <body>
 	<div id = "menu">
-		<p>
-			<h1 id = "tag1" style="text-align: center;font-size: 200%"> AI Algorithms </h1>
-		<p style="margin-top:50px;margin-bottom:20px">
-			
-			<text> Eta: </text>
-			<select id = "eta1" style="margin-right:50px" onclick="dropdownclick()">
-					<option value="0.01">0.01</option>
-					<option value="0.5">0.5</option>
-			</select>
+		<h1 id = "tag1"> AI Algorithms </h1>
+		<h3>Please select your paramaters here</h3>
+		<p id="subheading">You are currently looking at the standardized Iris data set with an eta of 0.01</p>
+	
+		
+		<text> Eta: </text>
+		<select class="dropdown" id = "eta1" onclick="dropdownclick()">
+				<option value="0.01">0.01</option>
+				<option value="0.5">0.5</option>
+		</select>
 
-			<text> Standardize: </text>
-			<select id = "standardize1"  style="margin-right:50px">
-					<option value="true">True</option>
-					<option value="false">False</option>
-			</select>
+		<text> Standardize: </text>
+		<select class="dropdown" id = "standardize1">
+				<option value="true">True</option>
+				<option value="false">False</option>
+		</select>
 
-			<text> Data: </text>
-			<select id="data1" style="margin-right:50px">
-					<option value="iris">iris</option>
-					<option value="cancer">WDBC cancer</option>
-			</select>
+		<text> Data: </text>
+		<select class="dropdown" id="data1" >
+				<option value="iris">Iris</option>
+				<option value="cancer">WDBC cancer</option>
+		</select>
 
-			<button onclick="buttonClicked()" type="button">Click here to refresh</button>
-		</p>
-
+		<button class="button" onclick="buttonClicked()" type="button">Go</button>
 	</div>
 
 	
 	
 	<div id="Rplot" >
 		<script src="js/Rplot.js"></script>
+	</div>
+
+	<div id="footer">
+		<p class="footer">Created by Max Christl and Dominique Paul, &#9400; Johannes Binswanger, Universität St. Gallen 2017 </p>
 	</div>
 	
 <!-- highlight R code -->

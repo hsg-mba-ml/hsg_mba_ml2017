@@ -1,28 +1,58 @@
-/*
+(function($) {
+    $(document).ready(function() {
 
-Habe die urspräunglcihe funktion auskommmentiert und in dieser .js datei erstmal gearbeitet, damit der code immer von alleine läuft wenn ich den browser
-refresche, passen wir nachher wieder an.
-
-*/
-
-
-// (function($) {
-//     $(document).ready(function() {
-// 	$.fn.scianimator.defaults.theme = 'dark';
-// 	$('#Rplot').scianimator({
-// 	    'images': ['IMG_perceptron2d_WDBC cancer/Rplot1.png', 'IMG_perceptron2d_WDBC cancer/Rplot2.png', 'IMG_perceptron2d_WDBC cancer/Rplot3.png', 'IMG_perceptron2d_WDBC cancer/Rplot4.png', 'IMG_perceptron2d_WDBC cancer/Rplot5.png', 'IMG_perceptron2d_WDBC cancer/Rplot6.png', 'IMG_perceptron2d_WDBC cancer/Rplot7.png', 'IMG_perceptron2d_WDBC cancer/Rplot8.png', 'IMG_perceptron2d_WDBC cancer/Rplot9.png', 'IMG_perceptron2d_WDBC cancer/Rplot10.png', 'IMG_perceptron2d_WDBC cancer/Rplot11.png', 'IMG_perceptron2d_WDBC cancer/Rplot12.png', 'IMG_perceptron2d_WDBC cancer/Rplot13.png', 'IMG_perceptron2d_WDBC cancer/Rplot14.png', 'IMG_perceptron2d_WDBC cancer/Rplot15.png', 'IMG_perceptron2d_WDBC cancer/Rplot16.png', 'IMG_perceptron2d_WDBC cancer/Rplot17.png', 'IMG_perceptron2d_WDBC cancer/Rplot18.png', 'IMG_perceptron2d_WDBC cancer/Rplot19.png', 'IMG_perceptron2d_WDBC cancer/Rplot20.png', 'IMG_perceptron2d_WDBC cancer/Rplot21.png', 'IMG_perceptron2d_WDBC cancer/Rplot22.png', 'IMG_perceptron2d_WDBC cancer/Rplot23.png', 'IMG_perceptron2d_WDBC cancer/Rplot24.png', 'IMG_perceptron2d_WDBC cancer/Rplot25.png', 'IMG_perceptron2d_WDBC cancer/Rplot26.png', 'IMG_perceptron2d_WDBC cancer/Rplot27.png', 'IMG_perceptron2d_WDBC cancer/Rplot28.png', 'IMG_perceptron2d_WDBC cancer/Rplot29.png', 'IMG_perceptron2d_WDBC cancer/Rplot30.png'],
-// 	    'width': 1500,
-// 	    'delay': 1000,
-// 	    'loopMode': 'loop'
-// 	});
-// 	$('#Rplot').scianimator('play');
-//     });
-// })(jQuery);
+	    var bildergruppe = ["element1", "element2"];
+		for(i = 0; i<= 29; i++)
+		{
+			bildergruppe[i] = "images/eta=0.01-st=true-data=iris" + "/Rplot" + (i+1) +".png";
+		}
+			
+		$.fn.scianimator.defaults.theme = 'dark';
+		$('#Rplot').scianimator({
+		    'images': [
+		    	bildergruppe[0],
+		    	bildergruppe[1],
+		    	bildergruppe[2],
+		    	bildergruppe[3],
+		    	bildergruppe[4],
+		    	bildergruppe[5],
+		    	bildergruppe[6],
+		    	bildergruppe[7],
+		    	bildergruppe[8],
+		    	bildergruppe[9],
+		    	bildergruppe[10],
+		    	bildergruppe[11],
+		    	bildergruppe[12],
+		    	bildergruppe[13],
+		    	bildergruppe[14],
+		    	bildergruppe[15],
+		    	bildergruppe[16],
+		    	bildergruppe[17],
+		    	bildergruppe[18],
+		    	bildergruppe[19],
+		    	bildergruppe[20],
+		    	bildergruppe[21],
+		    	bildergruppe[22],
+		    	bildergruppe[23],
+		    	bildergruppe[24],
+		    	bildergruppe[25],
+		    	bildergruppe[26],
+		    	bildergruppe[27],
+		    	bildergruppe[28],
+		    	bildergruppe[29]
+		    			],
+		    'width': 1500,
+		    'delay': 1000,
+		    'loopMode': 'loop'
+	});
+	$('#Rplot').scianimator('play');
+    });
+})(jQuery);
 
 
 
 function buttonClicked(){
-	//eta=0.01-st=false-data=cancer
+	//eta=0.01-st=true-data=iris
 	//format:  eta=0.01-
 	var eta = "eta=" + document.getElementById("eta1").value + "-";
 	//format: st-false- / st-true-
