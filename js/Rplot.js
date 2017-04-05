@@ -30,7 +30,7 @@ function buttonClicked(){
 	//format: data=cancer / data=iris
 	var data = "data=" + document.getElementById("data1").value;
 
-	var zwischen = "Images/" + eta + standardize + data;
+	var zwischen = "https://github.com/mchristl/AI_web_application/blob/master/Images/" + eta + standardize + data;
 
 	var bildergruppe = ["element1", "element2"];
 	for(i = 0; i<= 29; i++)
