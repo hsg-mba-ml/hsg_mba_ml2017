@@ -16,31 +16,49 @@
 
 </head>
 <body>
+
+	<div id="header">
+       	<div id="navWrap">
+            <div id="nav">
+            	<div id="peterli">
+            		<img id="peterli" width="202" height="62"src="https://www.unisg.ch/~/media/d5b9607a44064498a9c920ca5c2cef52.jpg">
+                </div>
+                <ul>
+                    <li class="hvr-sink"><a href="#" >View 2</a></li>
+                    <li class="hvr-sink"><a href="#" >Perceptron Algorithm</a></li>
+                </ul>    
+                <br class="clearLeft" />
+            </div>
+        </div>
+    </div>
+
+
 	<div id = "menu">
 		<h1 id = "tag1"> AI Algorithms </h1>
 		<h3>Please select your paramaters here</h3>
-		<p id="subheading">You are currently looking at the standardized Iris data set with an eta of 0.01</p>
+		<p id="subheading">The default screen which you are currently looking at is the standardized Iris data set with an eta of 0.01</p>
 	
-		
-		<text> Eta: </text>
-		<select class="dropdown" id = "eta1" onclick="dropdownclick()">
-				<option value="0.01">0.01</option>
-				<option value="0.5">0.5</option>
-		</select>
+		<div class="selectionmenu">
+			<text> Eta: </text>
+			<select class="dropdown" id = "eta1" onclick="dropdownclick()">
+					<option value="0.01">0.01</option>
+					<option value="0.5">0.5</option>
+			</select>
 
-		<text> Standardize: </text>
-		<select class="dropdown" id = "standardize1">
-				<option value="true">True</option>
-				<option value="false">False</option>
-		</select>
+			<text> Standardize: </text>
+			<select class="dropdown" id = "standardize1">
+					<option value="true">True</option>
+					<option value="false">False</option>
+			</select>
 
-		<text> Data: </text>
-		<select class="dropdown" id="data1" >
-				<option value="iris">Iris</option>
-				<option value="cancer">WDBC cancer</option>
-		</select>
+			<text> Data: </text>
+			<select class="dropdown" id="data1" >
+					<option value="iris">Iris</option>
+					<option value="cancer">WDBC cancer</option>
+			</select>
 
-		<button class="button" onclick="buttonClicked()" type="button">Go</button>
+			<button class="button" onclick="buttonClicked()" type="button">Go</button>
+		</div>
 	</div>
 
 	
