@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
@@ -5,15 +6,14 @@
 	<title>Perceptron learning</title>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/scianimator.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
-  <link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
+	<link rel="stylesheet" href="css/styles.css" />
 
 	<script src="js/jquery-1.4.4.min.js"></script>
 	<script src="js/jquery.scianimator.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/languages/r.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/languages/r.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 
@@ -32,8 +32,7 @@
         </div>
     </div>
 
-
-	<div id = "menu">
+    <div id = "menu">
 		<h1 id = "tag1"> AI Algorithms </h1>
 		<h3>Please select your paramaters here</h3>
 		<p id="subheading">The default screen which you are currently looking at is the standardized Iris data set with an eta of 0.01</p>
@@ -45,33 +44,16 @@
 					<option value="0.5">0.5</option>
 			</select>
 
-			<text> Standardize: </text>
-			<select class="dropdown" id = "standardize1">
-					<option value="true">True</option>
-					<option value="false">False</option>
-			</select>
-
-			<text> Data: </text>
-			<select class="dropdown" id="data1" >
-					<option value="iris">Iris</option>
-					<option value="cancer">WDBC cancer</option>
-			</select>
-
-			<button class="button" onclick="buttonClicked()" type="button">Go</button>
+			<button class="button" onclick="button2Clicked()" type="button">Go</button>
 		</div>
 	</div>
 
 	
 	
 	<div id="Rplot" >
-		<script src="js/Rplot.js"></script>
+		<script src="js/Rplot2.js"></script>
 	</div>
 
-	<div id="footer">
-		<p class="footer">Created by Max Christl and Dominique Paul, &#9400; Johannes Binswanger, Universität St. Gallen 2017 </p>
-	</div>
-	
-<!-- highlight R code -->
 
 </body>
 </html>
