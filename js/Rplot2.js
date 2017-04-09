@@ -5,13 +5,13 @@
 	    var bildergruppe = ["element1", "element2"];
 		for(i = 0; i<= 29; i++)
 		{
-			bildergruppe[i] = "images/2-learnMean/eta=0.01-first" + "/Rplot" + (i+1) +".png";
+			bildergruppe[i] = "images/2-learnMean/eta=0.01-first/JPEG/Rplot" + (i+1) +".jpg";
 		}
 			
 		$.fn.scianimator.defaults.theme = 'dark';
 		$('#Rplot').scianimator({
 		    'images': bildergruppe,
-		    'width': 1500,
+		    'width': 1200,
 		    'delay': 1000,
 		    'loopMode': 'loop'
 	});
