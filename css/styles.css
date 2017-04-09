@@ -13,6 +13,19 @@ h3 {
 	margin-top: 12px;
 	margin-bottom: 18px;
 }
+
+#header {
+  margin-bottom: 75px;
+}
+
+#title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 17px;
+  padding-left: 30%;
+}
+
+
 #menu {
 	margin-top: 20px;
 	width: 100%;
@@ -44,6 +57,7 @@ h3 {
 
 #Rplot {
 	margin-top: 50px;
+  z-index: -1;
 }
 
 #footer {
@@ -66,15 +80,17 @@ h3 {
 }
 #navWrap {
    height: 30px;
+
 }
 #nav {
    padding: 5px;  
-   /*background-color: #FFFFFF;*/
+   background-color: #FFFFFF;
+   border-bottom: 2px solid grey;
 }
 #nav ul {
    margin: 0;
    padding: 0; 
-   padding-top: 10px;   
+   padding-top: 10px;  
 }
 #nav li {
    float: right;
@@ -89,8 +105,10 @@ h3 {
 }
 #nav li a {
    color: #FFF;  
-   text-decoration: none;    
+   text-decoration: none;   
+   display: block; 
 }
+
 
 .hvr-sink {
   display: inline-block;
