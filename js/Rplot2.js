@@ -32,7 +32,7 @@ function button2Clicked(){
 	var bildergruppe = ["element1", "element2"];
 	for(i = 0; i<= 29; i++)
 	{
-		bildergruppe[i] = zwischen + "/Rplot" + (i+1) +".png";
+		bildergruppe[i] = zwischen + "/JPEG/Rplot" + (i+1) +".jpg";
 	}
 
 	//console.warn(zwischen + "/Rplot" + 1 +".png");
@@ -43,7 +43,7 @@ function button2Clicked(){
 	$.fn.scianimator.defaults.theme = 'dark';
 	$('#Rplot').scianimator({
 	    'images': bildergruppe,
-	    'width': 1500,
+	    'width': 1200,
 	    'delay': 1000,
 	    'loopMode': 'loop'
 	});
