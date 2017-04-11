@@ -5,7 +5,7 @@
 	    var bildergruppe = ["element1", "element2"];
 		for(i = 0; i<= 29; i++)
 		{
-			bildergruppe[i] = "images/1-perceptron/eta=0.01-st=false-data=cancer/JPEG" + "/Rplot" + (i+1) +".jpg";
+			bildergruppe[i] = "Images/1-perceptron/eta=0.01-st=false-data=cancer/JPEG" + "/Rplot" + (i+1) +".jpg";
 
 		}
 			
