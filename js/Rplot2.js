@@ -22,8 +22,6 @@
 
 
 function button2Clicked(){
-	//eta=0.01-st=true-data=iris
-	//format:  eta=0.01-
 	var eta = "eta=" + document.getElementById("eta1").value + "-";
 	var startingPoint = document.getElementById("startingPoint").value;
 
@@ -35,15 +33,16 @@ function button2Clicked(){
 		bildergruppe[i] = zwischen + "/JPEG/Rplot" + (i+1) +".jpg";
 	}
 
+	$('#Rplot').scianimator('stop');
 
 	document.getElementById("Rplot").innerHTML = "";
 
 	$.fn.scianimator.defaults.theme = 'dark';
-	$('#Rplot').scianimator({
-	    'images': bildergruppe,
-	    'width': 1200,
-	    'delay': 1000,
-	    'loopMode': 'loop'
+		$('#Rplot').scianimator({
+		    'images': bildergruppe,
+		    'width': 1200,
+		    'delay': 1000,
+		    'loopMode': 'loop'
 	});
 	$('#Rplot').scianimator('play');
 }

@@ -39,8 +39,8 @@ function buttonClicked(){
 		bildergruppe[i] = zwischen + "/JPEG/Rplot" + (i+1) +".jpg";
 	}
 
+	$('#Rplot').scianimator('stop');
 	document.getElementById("Rplot").innerHTML = "";
-	document.getElementById("subheading").style.display="none";
 
 	$.fn.scianimator.defaults.theme = 'dark';
 	$('#Rplot').scianimator({

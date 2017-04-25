@@ -26,6 +26,11 @@ h3 {
 }
 
 
+.textrow {
+  margin-top: 15px;
+  text-align: center;
+}
+
 #menu {
 	margin-top: 20px;
 	width: 100%;
@@ -56,7 +61,7 @@ h3 {
 }
 
 #Rplot {
-	margin-top: 50px;
+	margin-top: 30px;
 /*  z-index: -1;*/
 }
 
