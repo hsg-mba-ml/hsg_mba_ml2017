@@ -5,7 +5,7 @@
 	    var bildergruppe = ["element1", "element2"];
 		for(i = 0; i<= 29; i++)
 		{
-			bildergruppe[i] = "Images/1-perceptron/eta=0.01-st=true-data=iris/JPEG" + "/Rplot" + (i+1) +".jpg";
+			bildergruppe[i] = "Images/1-adaline/iris_stand/" + "/Rplot" + (i+1) +".jpg";
 
 		}
 			
@@ -23,20 +23,16 @@
 
 
 function buttonClicked(){
-	//eta=0.01-st=true-data=iris
-	//format:  eta=0.01-
-	var eta = "eta=" + document.getElementById("eta1").value + "-";
-	//format: st-false- / st-true-
-	var standardize = "st=" + document.getElementById("standardize1").value + "-";
-	//format: data=cancer / data=iris
-	var data = "data=" + document.getElementById("data1").value;
 
-	var zwischen = "Images/1-perceptron/" + eta + standardize + data;
+	var data = document.getElementById("data1").value + "_";
+	var standardize = document.getElementById("standardize1").value;
+
+	var zwischen = "Images/1-adaline/" + data + standardize;
 
 	var bildergruppe = ["element1", "element2"];
 	for(i = 0; i<= 29; i++)
 	{
-		bildergruppe[i] = zwischen + "/JPEG/Rplot" + (i+1) +".jpg";
+		bildergruppe[i] = zwischen + "/Rplot" + (i+1) +".jpg";
 	}
 
 	$('#Rplot').scianimator('stop');

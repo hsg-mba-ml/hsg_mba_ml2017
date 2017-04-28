@@ -3,9 +3,9 @@
     $(document).ready(function() {
 
 	    var bildergruppe = ["element1", "element2"];
-		for(i = 0; i<= 29; i++)
+		for(i = 0; i<= 41; i++)
 		{
-			bildergruppe[i] = "Images/2-learnMean/eta=0.01-first/JPEG/Rplot" + (i+1) +".jpg";
+			bildergruppe[i] = "Images/2-learnMean/eta=0.01-first/Rplot" + (i+1) +".jpg";
 		}
 			
 		$.fn.scianimator.defaults.theme = 'dark';
@@ -28,9 +28,9 @@ function button2Clicked(){
 	var zwischen = "Images/2-learnMean/" + eta + startingPoint;
 
 	var bildergruppe = ["element1", "element2"];
-	for(i = 0; i<= 29; i++)
+	for(i = 0; i<= 41; i++)
 	{
-		bildergruppe[i] = zwischen + "/JPEG/Rplot" + (i+1) +".jpg";
+		bildergruppe[i] = zwischen + "/Rplot" + (i+1) +".jpg";
 	}
 
 	$('#Rplot').scianimator('stop');
