@@ -76,3 +76,33 @@ $(function() {
         }
     });
 });
+
+
+$(function() {
+    // Stick the #nav to the top of the window
+    var foo = $('#foo');
+    var nav = $('#nav');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+            foo.css({
+                position: 'fixed',
+                top: 80,
+                left: foo.offset().left,
+                width: foo.width()
+            });
+            isFixed = true;
+        }
+        // else if (!shouldBeFixed && isFixed)
+        // {
+        //     foo.css({
+        //         position: 'static'
+        //     });
+        //     isFixed = false;
+        // }
+    });
+});

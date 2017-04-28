@@ -41,7 +41,9 @@ dataSets = c("iris", "WDBC cancer")
 
 
 dataLabel = "Iris"
-#dataLabel = "WDBC cancer"
+dataLabel = "WDBC cancer"
+
+#dataLabel = "wdbcData.RData"
 
 
 
@@ -51,7 +53,7 @@ dataLabel = "Iris"
 
 standardize = TRUE  # whether to standardize data with standFun() below
 
-eta = 0.01   # The learning rate
+eta = 0.2   # The learning rate
 
 nTrain = 30   # Number of observations used for training
 
@@ -85,7 +87,7 @@ nTrain = 30   # Number of observations used for training
   # For the wdbc data set
   
     } else if (dataLabel == "WDBC cancer"){
-      load("D:/OneDrive/Weitere Kurse/Machine Learning und KI/Data/wdbcData.RData") 
+      load("/Users/dominiquepaul/xJob/AI_web_application/R_code/wdbcData.RData") 
       Data$Label = ifelse(Data$diagnosis == "B", -1, 1)
       predictors = c(names(Data)[5], names(Data)[10])
       targetVar = "diagnosis"

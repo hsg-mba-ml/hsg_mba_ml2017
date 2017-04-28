@@ -65,7 +65,7 @@ h3 {
 /*  z-index: -1;*/
 }
 
-#footer {
+#footer1 {
     margin-top: 10px;
     text-align: center;
     font-size: 14px;
@@ -115,6 +115,38 @@ h3 {
    display: block; 
 }
 
+#foo {
+   padding: 5px;  
+   z-index: 10;
+   text-align: right;
+}
+#foo button {
+   margin: 0;
+   padding: 0; 
+   padding-top: 10px;  
+}
+#foo button {
+   float: right;
+   padding: 10px 22px;
+   /*background-color: #007D38;*/
+   margin: 0 10px 0 0;
+   /*color: #FFF;*/
+   list-style-type: none;
+   border-radius: 2px;
+   font-size: 14px;
+   margin-top: 12px;
+}
+#foo button {
+   /*color: #FFF;  */
+    background-color: Transparent;
+    /*background-repeat:no-repeat;*/
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+
+}
+
 
 .hvr-sink {
   display: inline-block;
@@ -142,3 +174,6 @@ h3 {
 br.clearLeft {
    clear: right;        
 }​
+
+
+
