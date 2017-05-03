@@ -11,7 +11,7 @@
 # suffering from a desease or not). Learning is illustrated with an animation
 # using the animation package. The output is an html file that shows the animation.
 # The code allows for various data sets. These are prepared for the analysis in
-# Section 1. 
+# Section 1.
 
 
 # Header
@@ -41,7 +41,7 @@ dataSets = c("iris", "WDBC cancer")
 
 
 dataLabel = "Iris"
-dataLabel = "WDBC cancer"
+#dataLabel = "WDBC cancer"
 
 #dataLabel = "wdbcData.RData"
 
@@ -53,7 +53,7 @@ dataLabel = "WDBC cancer"
 
 standardize = TRUE  # whether to standardize data with standFun() below
 
-eta = 0.2   # The learning rate
+eta = 0.01  # The learning rate
 
 nTrain = 30   # Number of observations used for training
 

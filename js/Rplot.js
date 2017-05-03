@@ -6,7 +6,6 @@
 		for(i = 0; i<= 29; i++)
 		{
 			bildergruppe[i] = "Images/1-adaline/iris_stand/" + "/Rplot" + (i+1) +".jpg";
-
 		}
 			
 		$.fn.scianimator.defaults.theme = 'dark';
@@ -37,6 +36,7 @@ function buttonClicked(){
 
 	$('#Rplot').scianimator('stop');
 	document.getElementById("Rplot").innerHTML = "";
+    document.getElementById("subheading").innerHTML = "For this animation, the value of eta is 0.01";
 
 	$.fn.scianimator.defaults.theme = 'dark';
 	$('#Rplot').scianimator({
@@ -91,7 +91,7 @@ $(function() {
         if (shouldBeFixed && !isFixed) {
             foo.css({
                 position: 'fixed',
-                top: 80,
+                top: 65,
                 left: foo.offset().left,
                 width: foo.width()
             });
